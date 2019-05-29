@@ -1,134 +1,176 @@
-baseurl = "https://www.example.com/"
-languageCode = "en"
-title = "PlastikUSA Products"
-theme = "vex-hugo"
+baseurl = ""
+title = "PlastikUSA"
+theme = "hugo-universal-theme"
+languageCode = "en-us"
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "plastikUSA"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# Define the number of posts per page
+paginate = 10
+
+[menu]
+
+# Main menu
+
+[[menu.main]]
+    identifier="home"
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+[[menu.main]]
+    identifier="blog"
+    name = "Blog"
+    url  = "/blog/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "faq"
+    name = "FAQ"
+    url  = "/faq/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url  = "/contact/"
+    weight = 4
+
+# Top bar social links menu
+
+[[menu.topbar]]
+    weight = 1
+    name = "GitHub"
+    url = "https://github.com/devcows/hugo-universal-theme"
+    pre = "<i class='fa fa-2x fa-github'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Facebook"
+    url = "http://facebook.com"
+    pre = "<i class='fa fa-2x fa-facebook'></i>"
+
+[[menu.topbar]]
+    weight = 3
+    name = "Twitter"
+    url = "http://twitter.com"
+    pre = "<i class='fa fa-2x fa-twitter'></i>"
+
+[[menu.topbar]]
+    weight = 4
+    name = "Email"
+    url = "mailto:your@email.com"
+    pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
-  description = "PlastikUSA"
+    viewMorePostLink = "/blog/"
+    author = "PlastikUSA"
+    defaultKeywords = ["devows", "hugo", "go"]
+    defaultDescription = "Site created by Hugo"
 
-  # Put your custom stylesheets and scripts
-  custom_stylesheets = []
-  custom_scripts = []
+    # Twitter
+    twitter = "GoHugoIO"
+    twitterImage = "img/twitter-default.png"
 
-  # Additional meta
-  [[params.meta]]
-    name = ""
-    description = ""
+    # Google Maps API key (if not set will default to not passing a key.)
+    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
-  # Navigation bar informations
-  [params.navbar]
-    logo = "PlastikUSA"
-    [[params.navbar.menu]]
-      link = "#"
-      text = "HOME"
-    [[params.navbar.menu]]
-      link = "#about"
-      text = "ABOUT"
-    [[params.navbar.menu]]
-      link = "#service"
-      text = "PRODUCTS"
-    [[params.navbar.menu]]
-      link = "#contact"
-      text = "CONTACT"
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "default"
 
-  # Header
-  [params.header]
-    title = "Quality packaging, for all your needs"
-    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
-    [params.header.image]
-      path = "img/hero_product_2.jpg"
-      alt = "Hero Product"
-    [params.header.button]
-      link = "#about"
-      text = "Buy Now With $199"
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io email
+    email = "info@plastikusa.com"
+    contact_form_ajax = false
 
-  # Features
-  [params.features]
-    title = "Our Core Features"
-    [params.features.image]
-      path = "img/watch-2.png"
-      alt = "Watch"
-    # Menu at the left of the image
-    [[params.features.left]]
-      icon = "tf-ion-ios-alarm-outline"
-      title = "Smooth Touch"
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
-    [[params.features.left]]
-      icon = "tf-ion-ios-bell-outline"
-      title = "Elegant Design"
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
-    [[params.features.left]]
-      icon = "tf-ion-ios-cart-outline"
-      title = "Easy Pricing"
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
-    # Menu at the right of the image
-    [[params.features.right]]
-      icon = "tf-ion-ios-alarm-outline"
-      title = "Smooth Touch"
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
-    [[params.features.right]]
-      icon = "tf-ion-ios-bell-outline"
-      title = "Elegant Design"
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
-    [[params.features.right]]
-      icon = "tf-ion-ios-cart-outline"
-      title = "Easy Pricing"
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+    about_us = "<p>PlastikUSA is a plastic disposables manufacturing company.</p>"
+    copyright = "Copyright (c) 2018, PlastikUSA. All rights reserved."
 
-  [params.promo]
-    title = "Designed by professional , the benefit for creative gigs"
-    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum.  \nLorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum."
-    [params.promo.image]
-      path = "images/watch.png"
-      alt = "Watch"
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
 
-  [params.feature_list]
-    title = "Why Choose Apple Watch"
-    [[params.feature_list.items]]
-      image = "images/showcase/showcase-4.png"
-      title = "Lorem ipsum dolor sit amet."
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit quas, quo harum deserunt consequatur cumque!"
-      button_link = ""
-      button_text = "Check Features"
-    [[params.feature_list.items]]
-      image = "images/showcase/showcase-3.png"
-      title = "Lorem ipsum dolor sit amet."
-      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit quas, quo harum deserunt consequatur cumque!"
-      button_link = ""
-      button_text = "Check Features"
+    logo = "img/logo.png"
+    logo_small = "img/logo.png"
+    address = """<p><strong>No. 199, Liansheng Road</strong>
+        <br>Coast Business Center,
+        <br>Yinzhou District
+        <br>Ningbo
+        <br>ZJ, <strong>China</strong> <br>
+      </p>
+      """
+    latitude = "-12.043333"
+    longitude = "-77.028333"
 
-  [params.gallery]
-    title = "Checkout some amazing Shorts"
-    # Set the image directory to use as base
-    directory = "images/showcase"
-    # Set the images to show in the gallery
-    images = ["showcase-1.png", "showcase-2.png", "showcase-3.png", "showcase-4.png", "showcase-5.png", "showcase-6.png", "showcase-7.png", "showcase-8.png"]
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
 
-  [params.call_to_action]
-    title = "Get Product Updates"
-    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
-    placeholder = "Your Email Address Here"
-    button_text = "Subscribe"
+# Enable or disable top bar with social icons
+[params.topbar]
+    enable = true
+    text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
+      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+      </p>
+      """
 
-  [params.testimonials]
-    title = "Watch Review"
-    [[params.testimonials.blocks]]
-      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-      name = "Jonathon Andrew"
-      position = "CEO, Themefisher"
-      image = "images/avater.png"
-    [[params.testimonials.blocks]]
-      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-      name = "Jonathon Andrew"
-      position = "CEO, Themefisher"
-      image = "images/avater.png"
-    [[params.testimonials.blocks]]
-      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-      name = "Jonathon Andrew"
-      position = "CEO, Themefisher"
-      image = "images/avater.png"
-    [params.testimonials.button]
-      link = ""
-      text = "Grab You Product Now"
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
 
-  # Footer uses navbar data
+[params.carousel]
+    enable = true
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
+
+[params.features]
+    enable = true
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.
+
+[params.testimonials]
+    enable = true
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more informtion take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have manufactured amazing products for our clients. Have a look what our clients said about us."
+
+[params.see_more]
+    enable = true
+    icon = "fa fa-file-code-o"
+    title = "Do you want to see more?"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "#"
+    link_text = "Check other homepages"
+
+[params.clients]
+    enable = true
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = true
+    title = "From our blog"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
