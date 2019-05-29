@@ -1,4 +1,9 @@
 weight: 1
 title: "PlastikUSA"
-description: "<p>Pursuing customer satisfaction,<br> taking care of our employees <br> and developing green food containers</p>"
+description: >
+  <ul class="list-style-none">
+    <li>Pursuing customer satisfaction</li>
+    <li>taking care of our employees</li>
+    <li>developing green food containers </li>
+  </ul>
 image: "img/carousel/hero_product.jpg"
