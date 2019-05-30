@@ -152,11 +152,11 @@ summaryLength = 20
 
 [params.see_more]
     enable = true
-    icon = "fa fa-file-code-o"
-    title = "Thanks for visiting our new site!"
-    subtitle = "We've upgraded from our old site, but if you would like to go back click below"
-    link_url = "http://www.plastikusa.com/"
-    link_text = "Old site"
+    icon = "fa fa-book"
+    title = "Interested in receiving our product catalog?"
+    subtitle = "Click below to view and download our product catalog PDF"
+    link_url = "http://www.plastikusa.com/catalog.pdf"
+    link_text = "Our Product Catalog"
 
 [params.clients]
     enable = true
