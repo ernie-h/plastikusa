@@ -8,14 +8,11 @@ defaultContentLanguage = "en"
 disqusShortname = "plastikUSA"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
-
 # Define the number of posts per page
 paginate = 10
 
-[menu]
-
 # Main menu
-
+[menu]
 [[menu.main]]
     identifier="home"
     name = "Home"
@@ -23,15 +20,16 @@ paginate = 10
     weight = 1
 
 [[menu.main]]
-    identifier="blog"
-    name = "Blog"
-    url  = "/blog/"
+    identifier = "about"
+    name = "About"
+    url  = "/about/"
     weight = 2
 
+# TODO: Figure out how to change blog url
 [[menu.main]]
-    identifier = "faq"
-    name = "FAQ"
-    url  = "/faq/"
+    identifier="blog"
+    name = "Products"
+    url  = "/blog/"
     weight = 3
 
 [[menu.main]]
@@ -41,13 +39,6 @@ paginate = 10
     weight = 4
 
 # Top bar social links menu
-
-[[menu.topbar]]
-    weight = 1
-    name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
-    pre = "<i class='fa fa-2x fa-github'></i>"
-
 [[menu.topbar]]
     weight = 2
     name = "Facebook"
@@ -63,14 +54,14 @@ paginate = 10
 [[menu.topbar]]
     weight = 4
     name = "Email"
-    url = "mailto:your@email.com"
+    url = "mailto:info@plastikusa.com"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
     author = "PlastikUSA"
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site created by Hugo"
+    defaultKeywords = ["plastikusa", "container", "plastic"]
+    defaultDescription = "Site created by GreyWorm Inc."
 
     # Twitter
     twitter = "GoHugoIO"
@@ -80,8 +71,9 @@ paginate = 10
     googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "default"
+    style = "green"
 
+    # TODO: BOTTOM
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
     # email. Visitors can send up to a 1000 emails each month for free.
@@ -110,9 +102,10 @@ paginate = 10
         <br>Coast Business Center,
         <br>Yinzhou District
         <br>Ningbo
-        <br>ZJ, <strong>China</strong> <br>
+        <br><strong>ZJ, China</strong> <br>
       </p>
       """
+    # TODO: Update lat/long
     latitude = "-12.043333"
     longitude = "-77.028333"
 
@@ -122,7 +115,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on <b>(718)-877-3565</b> or <b>info@plastikusa.com</b></p>
+    text = """<p class="hidden-sm hidden-xs"><b>(718)-877-3565</b><br><b>info@plastikusa.com</b></p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
@@ -132,7 +125,7 @@ paginate = 10
 [params.widgets]
     categories = true
     tags = true
-    search = true
+    search = false
 
 [params.carousel]
     enable = true
@@ -142,12 +135,13 @@ paginate = 10
 
 [params.features]
     enable = true
+    title = "Our Values"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
 
 [params.testimonials]
-    enable = true
+    enable = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
@@ -168,7 +162,7 @@ paginate = 10
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
     title = "Our Clients"
-    subtitle = ""
+    subtitle = "We have partnered with a variety of reputable partners. You can be one of them."
 
 [params.recent_posts]
     enable = true
