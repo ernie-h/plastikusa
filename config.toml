@@ -1,5 +1,5 @@
 baseurl = ""
-title = "PlastikUSA"
+title = "PlastikUSA - Quality Packaging"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -56,7 +56,7 @@ summaryLength = 20
     weight = 4
     name = "Email"
     url = "mailto:info@plastikusa.com"
-    pre = "<i class='fa fa-2x fa-envelope'></i>"
+    pre = "<i class='fa fa-2x fa-envelope' style='margin-left: 16px;'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
@@ -116,9 +116,10 @@ summaryLength = 20
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs"><b>(718)-877-3565</b><br><b>info@plastikusa.com</b></p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+    text = """<p class="hidden-sm hidden-xs"><b><a href="tel:7188773565">(718)-877-3565</b></a><br>
+      <b><a href="mailto:info@plastikusa.com">info@plastikusa.com</a></b></p>
+      <p class="hidden-md hidden-lg"><a href="tel:7188773565" data-animate-hover="pulse"><i class="fa fa-2x fa-phone"></i></a>
+      <a href="mailto:info@plastikusa.com" data-animate-hover="pulse"><i class="fa fa-2x fa-envelope"></i></a>
       </p>
       """
 
@@ -150,12 +151,12 @@ summaryLength = 20
     subtitle = "We have manufactured amazing products for our clients. Have a look what our clients said about us."
 
 [params.see_more]
-    enable = false
+    enable = true
     icon = "fa fa-file-code-o"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
+    title = "Thanks for visiting our new site!"
+    subtitle = "We've upgraded from our old site, but if you would like to go back click below"
+    link_url = "http://www.plastikusa.com/"
+    link_text = "Old site"
 
 [params.clients]
     enable = true
@@ -163,7 +164,7 @@ summaryLength = 20
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
     title = "Our Clients"
-    subtitle = "We have partnered with a variety of reputable partners. You can be one of them."
+    subtitle = "At PlastikUSA We have partnered with a variety of reputable companies. You can be one of them."
 
 [params.recent_posts]
     enable = true

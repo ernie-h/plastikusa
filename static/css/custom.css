@@ -18,6 +18,12 @@
 .visible-xs,
 .visible-sm {
     width: 35%;
+    height: auto;
+}
+
+.navbar-default .navbar-brand {
+ /* TODO: Hacky fix for weird hamburger overflow on mobile */
+ width: 70%;
 }
 
 /* Marings to buttons */

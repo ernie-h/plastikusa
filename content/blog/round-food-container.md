@@ -13,7 +13,6 @@ banner = "/img/banners/round-food-container.jpg"
 ## Description
 
 >Our round food containers are used by many partners for food packaging, take out boxes, and storage. These containers are our most popular product, with partners ranging from businesses, such as restaurants and packaging firms, to individual customers who come directly to us through various e-commerce platforms. Many of our partners are in the food industry.
-
 >Our round food containers are used by many partners for food packaging, take out boxes, and storage. These containers are our most popular product, with partners ranging from businesses, such as restaurants and packaging firms, to individual customers who come directly to us through various e-commerce platforms. Many of our partners are in the food industry.
 
 ## Available Round Food Containers
