@@ -4,7 +4,7 @@ date = "2015-08-03T13:39:46+02:00"
 author = "PlastikUSA"
 tags = ["soup", "container"]
 categories = ["packaging"]
-banner = "img/banners/soup-container.jpg"
+banner = "/img/banners/soup-container.jpg"
 +++
 
 ## Description

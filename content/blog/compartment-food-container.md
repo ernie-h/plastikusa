@@ -4,7 +4,7 @@ date = "2015-10-02T21:49:20+02:00"
 author = "PlastikUSA"
 tags = ["compartment", "food", "container"]
 categories = ["packaging"]
-banner = "img/banners/compartment-food-container.jpg"
+banner = "/img/banners/compartment-food-container.jpg"
 +++
 
 ## Description
