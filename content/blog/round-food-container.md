@@ -6,7 +6,7 @@ tags = ["round", "food", "container", "plastic"]
 # TODO: Make categories work 
 categories = ["packaging"]
 description = ""
-banner = "/img/banners/round-food-container.jpg"
+banner = "img/banners/round-food-container.jpg"
 # TODO: Resize all images 
 +++
 

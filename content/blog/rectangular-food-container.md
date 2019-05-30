@@ -4,7 +4,7 @@ date = "2018-10-10T13:07:31+02:00"
 author = "PlastikUSA"
 tags = ["rectangular", "food", "container"]
 categories = ["packaging"]
-banner = "/img/banners/rectangular-food-container.jpg"
+banner = "img/banners/rectangular-food-container.jpg"
 +++
 
 ## Description
