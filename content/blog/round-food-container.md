@@ -1,23 +1,91 @@
 +++
 title = "Round Food Container"
-date = "2015-12-24T13:50:46+02:00"
+date = "2018-12-24T13:50:46+02:00"
 author = "PlastikUSA"
 tags = ["round", "food", "container", "plastic"]
 # TODO: Make categories work 
 categories = ["packaging"]
-description = "Our round food containers are used by many partners for food packaging, take out boxes, and storage. Many of our partners are in the food industry"
+description = ""
 banner = "/img/banners/round-food-container.jpg"
 # TODO: Resize all images 
 +++
 
 ## Description
-Our round food containers are used by many partners for food packaging, take out boxes, and storage. Many of our partners are in the food industry... kdjdska jsdakf aslk;flaksdjf a0sdifjweioqpnf Placeholder text. adksjfklasd;fijasofjoansdkfnal. Please take a look at our products
 
-{{< figure src="/img/products/round-food-container/ft-018b.png" title="FT-018b" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-023.png" title="FT-023" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-029.png" title="FT-029" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-036b.png" title="FT-036b" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-098b.png" title="FT-098b" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-7023b.png" title="FT-7023B" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-7029.png" title="FT-7029" width="45%" height="auto">}} 
-{{< figure src="/img/products/round-food-container/ft-7039.png" title="FT-7039" width="45%" height="auto">}} 
+>Our round food containers are used by many partners for food packaging, take out boxes, and storage. These containers are our most popular product, with partners ranging from businesses, such as restaurants and packaging firms, to individual customers who come directly to us through various e-commerce platforms. Many of our partners are in the food industry.
+
+>Our round food containers are used by many partners for food packaging, take out boxes, and storage. These containers are our most popular product, with partners ranging from businesses, such as restaurants and packaging firms, to individual customers who come directly to us through various e-commerce platforms. Many of our partners are in the food industry.
+
+## Available Round Food Containers
+
+{{< product-card
+src="/img/products/round-food-container/ft-018b.png"
+description="16 oz. Round Combo Pack" 
+model="FT-018"
+color="Clear White Black" 
+prod-dims="6.25 x 2.125"
+case-pack="150"
+case-dims="19 x 6.5 x 11.5">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-023.png"
+description="22 oz. Round Combo Pack - Ripple"
+model="FT-023"
+color="Clear White Black"
+prod-dims="7.25 x 2"
+case-pack="150"
+case-dims="21.75 x 7.5 x 12.75">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-029.png"
+description="26 oz. Round Combo Pack - Ripple"
+model="FT-029"
+color="Clear White Black"
+prod-dims="7.25 x 2.35"
+case-pack="150"
+case-dims="21.75 x 7.5 x 13.5">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-036b.png"
+description="38 oz. Round Combo Pack - Ripple"
+model="FT-036B"
+color="Clear White Black"
+prod-dims="7.25 x 3.5"
+case-pack="150"
+case-dims="21.75 x 7.5 x 14.5">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-098b.png"
+description="40 oz. Round Combo Pack"
+model="FT-098B"
+color="Clear White Black"
+prod-dims="9x 2.125"
+case-pack="150"
+case-dims="18.25 x 9.25 x 19.75">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-7023b.png"
+description="22 oz. Round Combo Pack"
+model="FT-7023B"
+color="Clear White Black"
+prod-dims="7.25 x 2"
+case-pack="150"
+case-dims="21.75 x 7.5 x 12.75">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-7029.png"
+description="26 oz. Round Combo Pack"
+model="FT-7029"
+color="Clear White Black"
+prod-dims="7.25 x 2.35"
+case-pack="150"
+case-dims="21.75 x 7.5 x 13.5">}}
+
+{{< product-card
+src="/img/products/round-food-container/ft-7039.png"
+description="40 oz. Round Combo Pack"
+model="FT-7039"
+color="Clear White Black"
+prod-dims="7.25 x 3.5"
+case-pack="150"
+case-dims="21.75 x 7.5 x 14.5">}}

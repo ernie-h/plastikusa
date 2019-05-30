@@ -1,24 +1,39 @@
-
 /* Custom CSS from theme */
 .box-image-text .image {
-  min-height: 200px;
-  max-height: 200px;
+    min-height: 200px;
+    max-height: 200px;
 }
 
 .box-simple {
-min-height: 230px;
+    min-height: 230px;
 }
 
 /* My CSS */
 .img-responsive {
-  border-radius: 4px;
+    border-radius: 4px;
 }
 
-.hidden-xs, .hidden-sm, .visible-xs, .visible-sm {
-  width: 35%;
+.hidden-xs,
+.hidden-sm,
+.visible-xs,
+.visible-sm {
+    width: 35%;
 }
 
 /* Marings to buttons */
 .contact-go-to-btn {
-margin: 24px 0;
+    margin: 24px 0;
+}
+
+/* Product-card shortcode */
+.product-card {
+  background-color: rgb(245, 245, 245);
+  padding: 32px;
+  margin: 12px auto;
+  border-radius: 4px;
+}
+.product-card-description {
+  color: #6aae7a;
+  font-weight: bold;
+  font-size: 1.75em;
 }

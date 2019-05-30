@@ -1,0 +1,20 @@
+{{ if .IsNamedParams }}
+<div class="row product-card">
+  <div class="col-md-5">
+    <div>
+      <div style="position: relative; overflow: auto; display: inline-block;">
+        <img src={{.Get "src"}} class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <!-- col-md-5 -->
+  <div class="col-md-7 d-flex flex-column">
+    <p class="product-card-description">{{.Get "description"}}</p>
+    <p><b>Model: </b>{{.Get "model"}}</p>
+    <p><b>Product dimensions (in): </b>{{.Get "prod-dims"}}</p>
+    <p><b>Case pack: </b>{{.Get "case-pack"}}</p>
+    <p><b>Case Dimensions(in): </b>{{.Get "case-dims"}}</p>
+  </div>
+  <!-- col-md-7 -->
+</div>
+{{end}}
